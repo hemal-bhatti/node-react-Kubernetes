@@ -1,8 +1,6 @@
 pipeline {
-    agent {
-        label 'react'
-    }
-
+    agent any
+    
     stages {
         stage('Build Frontend Docker Image') {
             steps {
