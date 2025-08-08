@@ -6,7 +6,7 @@ WORKDIR /app
 
 RUN apk update && apk add nginx nodejs npm
 
-COPY package*.json .
+COPY package*.json ./
 
 RUN npm install && npm install -g pm2
 
