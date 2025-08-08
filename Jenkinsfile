@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build Frontend Docker Image') {
             steps {
-                dir('/home/hemal-bhatti/Desktop/Devops/kuber-prac/uday-kuber/frontend') {
+                dir('frontend') {
                     sh "sudo docker build -t react ."
                 }
             }
@@ -21,7 +21,7 @@ pipeline {
 
         stage('Build backend Docker Image') {
             steps {
-                dir('/home/hemal-bhatti/Desktop/Devops/kuber-prac/uday-kuber/backend') {
+                dir('backend') {
                     sh "sudo docker build -t node ."
                 }
             }
