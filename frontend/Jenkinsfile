@@ -1,8 +1,8 @@
 pipeline {
-    agent {
-        label 'react'
-    }
-
+    // agent {
+        // label 'Built-In Node'
+    // }
+    agent any;
     stages {
         stage('Build Docker') {
             steps {
